@@ -1,0 +1,56 @@
+{
+    "name": "argo",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/argo/src",
+    "projectType": "application",
+    "tags": ["type:application", "target:node"],
+    "targets": {
+        "build": {
+            "executor": "@nx/esbuild:esbuild",
+            "outputs": ["{options.outputPath}"],
+            "defaultConfiguration": "production",
+            "options": {
+                "platform": "node",
+                "outputPath": "dist/apps/argo",
+                "format": ["cjs"],
+                "bundle": false,
+                "main": "apps/argo/src/main.ts",
+                "tsConfig": "apps/argo/tsconfig.app.json",
+                "assets": ["apps/argo/src/assets"],
+                "generatePackageJson": true,
+                "esbuildOptions": {
+                    "sourcemap": true,
+                    "outExtension": {
+                        ".js": ".js"
+                    }
+                }
+            },
+            "configurations": {
+                "development": {},
+                "production": {
+                    "esbuildOptions": {
+                        "sourcemap": false,
+                        "outExtension": {
+                            ".js": ".js"
+                        }
+                    }
+                }
+            }
+        },
+        "serve": {
+            "executor": "@nx/js:node",
+            "defaultConfiguration": "development",
+            "options": {
+                "buildTarget": "argo:build"
+            },
+            "configurations": {
+                "development": {
+                    "buildTarget": "argo:build:development"
+                },
+                "production": {
+                    "buildTarget": "argo:build:production"
+                }
+            }
+        }
+    }
+}
