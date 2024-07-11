@@ -6,7 +6,7 @@
     "release": {
         "version": {
             "generatorOptions": {
-                "packageRoot": "dist/{projectRoot}",
+                "packageRoot": "dist/libs/tools",
                 "currentVersionResolver": "git-tag"
             }
         }
@@ -15,7 +15,8 @@
     "targets": {
         "nx-release-publish": {
             "options": {
-                "packageRoot": "dist/{projectRoot}"
+                "packageRoot": "dist/libs/tools",
+                "tag": "canary"
             }
         }
     }

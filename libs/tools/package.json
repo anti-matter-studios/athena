@@ -1,6 +1,6 @@
 {
     "name": "@anti-matter-studios/tools",
-    "version": "0.1.0-alpha.0",
+    "version": "0.1.0-alpha.1",
     "files": [
         "dist/src",
         "dist/*.cjs.js",
@@ -30,5 +30,9 @@
             "require": "./logger.cjs.js",
             "default": "./logger.esm.js"
         }
+    },
+    "publishConfig": {
+        "access": "public",
+        "tag": "canary"
     }
 }

@@ -20,10 +20,23 @@ const AthenaFormatColourMap: Record<string, ChalkInstance | undefined> = {
 /** Custom format used when logging some data. */
 const AthenaFormat = Winston.format(function(info) {
     // Retrieve the metadata from the info.
-    const { level /*metadata: { application, namespace, timestamp, ms }*/ } = info;
+    const { level, metadata: { application, namespace, timestamp, ms } } = info;
 
     // Prepare the output message.
     let message = (AthenaFormatColourMap[level] ?? chalk.black).call(chalk, `${level}\t`);
+
+    // Add the application name and namespace to the message.
+    if (application) {
+        let appNameAndNamespace = `${application}`;
+
+        // Add the namespace if provided.
+        if (namespace) {
+            appNameAndNamespace += `/${namespace}`;
+        }
+
+        // Add to the message.
+        message = `${message} [${appNameAndNamespace}]`;
+    }
 
     // Assign the message to the info object.
     info[MESSAGE] = message;

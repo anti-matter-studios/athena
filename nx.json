@@ -81,8 +81,7 @@
         "changelog": {
             "projectChangelogs": {
                 "createRelease": "github",
-                "entryWhenNoChanges": false,
-                "file": "CHANGELOG.md"
+                "entryWhenNoChanges": false
             },
             "git": {
                 "commit": false,
@@ -98,6 +97,7 @@
             },
             "git": {
                 "commit": true,
+                "commitMessage": "chore({projectName}): release {version}",
                 "tag": true
             }
         },
