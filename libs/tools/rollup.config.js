@@ -12,10 +12,14 @@ module.exports = withNx(
         compiler: "swc",
         format: ["cjs", "esm"],
         assets: [{ input: ".", output: ".", glob: "*.md" }],
+        external: "all",
+        generateExportsField: false,
+        deleteOutputPath: true,
     },
     {
-        // Provide additional rollup configuration here. See: https://rollupjs.org/configuration-options
-        // e.g.
-        // output: { sourcemap: true },
+        input: {
+            "env": "./src/lib/env.ts",
+            "logger": "./src/lib/logger.ts",
+        },
     },
 );

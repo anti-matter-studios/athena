@@ -1,11 +1,12 @@
 /*
  * Copyright © 2024. Anti-Matter Studios.
  */
+
 import chalk, { type ChalkInstance } from "chalk";
 import { MESSAGE } from "triple-beam";
 import Winston from "winston";
 
-import { getEnvironmentStringOptional } from "@anti-matter-studios/tools/environment-manager";
+import { getEnvironmentStringOptional } from "@anti-matter-studios/tools/env";
 
 
 /** Map of all the colours used by {@link AthenaFormat}. */
