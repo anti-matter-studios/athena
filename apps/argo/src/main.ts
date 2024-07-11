@@ -2,18 +2,11 @@
  * Copyright © 2024. Anti-Matter Studios.
  */
 
-import koa from "koa";
+import { initializeDotEnvConfiguration } from "./tools/env";
+import createArgoServer from "./server";
 
 
-const host = process.env.HOST ?? "localhost";
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+await initializeDotEnvConfiguration();
 
-const app = new koa();
-
-app.use(async ctx => {
-    ctx.body = { message: "Hello API" };
-});
-
-app.listen(port, host, () => {
-    console.log(`[ ready ] http://${host}:${port}`);
-});
+const argo = await createArgoServer();
+await argo.start();
