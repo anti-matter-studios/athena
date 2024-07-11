@@ -12,7 +12,7 @@
             "options": {
                 "platform": "node",
                 "outputPath": "dist/apps/argo",
-                "format": ["cjs"],
+                "format": ["esm"],
                 "bundle": false,
                 "main": "apps/argo/src/main.ts",
                 "tsConfig": "apps/argo/tsconfig.app.json",

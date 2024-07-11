@@ -3,7 +3,7 @@
  */
 
 import { createSecureServer } from "node:http2";
-import { getEnvironmentNumber, getEnvironmentString } from "@anti-matter-studios/tools/environment-manager";
+import { getEnvironmentNumber, getEnvironmentString } from "@anti-matter-studios/tools/env";
 import AthenaLogger from "@anti-matter-studios/tools/logger";
 
 import type { ArgoServer } from "./types";
