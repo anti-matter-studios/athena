@@ -48,7 +48,7 @@
             "options": {
                 "targetName": "test"
             },
-            "exclude": ["apps/argo-e2e/**/*"]
+            "exclude": ["apps/argo-e2e/**/*", "apps/argo-e2e/**/*"]
         }
     ],
     "targetDefaults": {
