@@ -1,0 +1,36 @@
+{
+    "name": "@anti-matter-studios/source",
+    "version": "0.1.0-alpha.1",
+    "description": "A React application used to build my personal blog and portfolio.",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/anti-matter-studios/athena.git"
+    },
+    "keywords": [
+        "react",
+        "blog",
+        "portfolio",
+        "anti-matter-studios",
+        "ashimoka"
+    ],
+    "author": {
+        "name": "Akane SHIMOKA",
+        "url": "https://akane.shimoka.dev/",
+        "email": "akane@shimoka.dev"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anti-matter-studios/athena/issues"
+    },
+    "homepage": "https://github.com/anti-matter-studios/athena#readme",
+    "devDependencies": {
+        "@nx/js": "19.4.2",
+        "@swc-node/register": "~1.9.1",
+        "@swc/core": "~1.5.7",
+        "@swc/helpers": "~0.5.11",
+        "nx": "19.4.2",
+        "prettier": "^2.6.2"
+    },
+    "dependencies": {}
+}
