@@ -1,0 +1,15 @@
+/*!
+ * Copyright © 2024. Anti-Matter Studios.
+ */
+
+@use "lib/colours";
+
+
+/** Applies the correct colours based on the available themes. */
+@each $theme, $map in colours.$themes {
+    :root[data-theme=#{$theme}] {
+        @each $name, $colour in $map {
+            --theme-colour-#{$name}: $colour;
+        }
+    }
+}
