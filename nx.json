@@ -75,5 +75,10 @@
                 "unitTestRunner": "vitest"
             }
         }
+    },
+    "release": {
+        "version": {
+            "preVersionCommand": "yarn nx run-many -t build"
+        }
     }
 }
