@@ -1,0 +1,9 @@
+{
+    "name": "amphitrite",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/amphitrite/src",
+    "projectType": "library",
+    "tags": ["type:library", "target:browser"],
+    "// targets": "to see all targets run: nx show project amphitrite --web",
+    "targets": {}
+}
