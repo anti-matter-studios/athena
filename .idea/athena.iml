@@ -3,7 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.nx" />
-      <excludePattern pattern="yarn.lock" />
+      <excludeFolder url="file://$MODULE_DIR$/.vale-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/.verdaccio" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

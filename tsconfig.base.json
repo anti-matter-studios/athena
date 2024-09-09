@@ -1,24 +1,20 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-        "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "declaration": false,
         "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
         "experimentalDecorators": true,
         "importHelpers": true,
         "lib": ["ESNext", "DOM"],
         "module": "ESNext",
         "moduleResolution": "Bundler",
-        "paths": {
-            "@anti-matter-studios/amphitrite": ["apps/amphitrite/src/index.ts"],
-            "@anti-matter-studios/tools/*": ["libs/tools/src/lib/*"]
-        },
         "rootDir": ".",
         "skipDefaultLibCheck": true,
         "skipLibCheck": true,
-        "strict": true,
         "sourceMap": true,
+        "strict": true,
         "target": "ESNext"
     },
     "exclude": ["node_modules", "tmp"]
