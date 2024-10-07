@@ -1,0 +1,30 @@
+{
+    "name": "@anti-matter-studios/config-parser",
+    "version": "1.0.0",
+    "description": "A simple package used to parse and manipulate .env files.",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/anti-matter-studios/athena.git"
+    },
+    "license": "MIT",
+    "private": true,
+    "author": {
+        "url": "https://akane.shimoka.dev/",
+        "email": "akane@shimoka.dev",
+        "name": "Akane SHIMOKA"
+    },
+    "homepage": "https://akane.shimoka.dev/",
+    "bugs": {
+        "url": "https://github.com/anti-matter-studios/athena/issues"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "dotenv-expand": "^11.0.6"
+    },
+    "devDependencies": {
+        "@anti-matter-studios/rollup-config": "workspace:*"
+    },
+    "scripts": {
+        "build": "athena-rollup"
+    }
+}

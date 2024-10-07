@@ -1,0 +1,30 @@
+{
+    "name": "@anti-matter-studios/amaryl",
+    "version": "0.1.0-alpha.1",
+    "description": "The home page for the portfolio application.",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/anti-matter-studios/athena.git"
+    },
+    "license": "MIT",
+    "private": true,
+    "author": {
+        "url": "https://akane.shimoka.dev/",
+        "email": "akane@shimoka.dev",
+        "name": "Akane SHIMOKA"
+    },
+    "homepage": "https://akane.shimoka.dev/",
+    "bugs": {
+        "url": "https://github.com/anti-matter-studios/athena/issues"
+    },
+    "devDependencies": {
+        "@anti-matter-studios/rollup-config": "workspace:*",
+        "@types/node": "22.5.5",
+        "typescript": "5.6.2",
+        "vite": "5.4.6"
+    },
+    "scripts": {
+        "build": "vite build",
+        "serve": "vite serve"
+    }
+}

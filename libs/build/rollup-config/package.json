@@ -1,0 +1,40 @@
+{
+    "name": "@anti-matter-studios/rollup-config",
+    "version": "0.1.0-alpha.1",
+    "description": "A simple tool used to pre-configure Rollup.",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/anti-matter-studios/athena.git"
+    },
+    "license": "MIT",
+    "author": {
+        "url": "https://akane.shimoka.dev/",
+        "email": "akane@shimoka.dev",
+        "name": "Akane SHIMOKA"
+    },
+    "homepage": "https://docs.akane.shimoka.dev/packages/@anti-matter-studios/rollup-config",
+    "bugs": {
+        "url": "https://github.com/anti-matter-studios/athena/issues"
+    },
+    "type": "module",
+    "dependencies": {
+        "@rollup/plugin-node-resolve": "15.2.3",
+        "@rollup/plugin-swc": "0.4.0",
+        "@swc/core": "1.7.26",
+        "@swc/helpers": "0.5.13",
+        "rollup": "4.21.2",
+        "rollup-plugin-dts": "6.1.1",
+        "yargs": "17.7.2"
+    },
+    "devDependencies": {
+        "@types/node": "22.5.5",
+        "@types/yargs": "17.0.33",
+        "jest": "29.7.0"
+    },
+    "scripts": {
+        "build": "rollup --config rollup.config.mjs"
+    },
+    "bin": {
+        "athena-rollup": "dist/index.js"
+    }
+}
