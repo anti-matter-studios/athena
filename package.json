@@ -1,0 +1,44 @@
+{
+    "name": "@anti-matter-studios/source",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Root package of the Cydonia mono-repository.",
+    "homepage": "https://docs.anti-matter.studio/packages/@anti-matter-studios/source",
+    "bugs": {
+        "url": "https://youtrack.anti-matter.studio/newIssue?project=CYDONIA&c=Kind+Bug&textFields=id%3D491-21%26value%3D%40anti-matter-studios%2Fsource%26type%3DTextFieldAndValue"
+    },
+    "license": "UNLICENSED",
+    "author": {
+        "name": "Anti-Matter Studios",
+        "email": "contact@anti-matter.studio",
+        "url": "https://anti-matter.studio/"
+    },
+    "contributors": [
+        {
+            "name": "Akane SHIMOKA",
+            "email": "akane@shimoka.dev",
+            "url": "https://akane.shimoka.dev/"
+        }
+    ],
+    "workspaces": [
+        "app/*",
+        "lib/*/*"
+    ],
+    "scripts": {
+        "install": "moon run eslint:build"
+    },
+    "devDependencies": {
+        "prettier": "^3.4.2",
+        "prettier-plugin-packagejson": "^2.5.6",
+        "typescript": "^5.7.2"
+    },
+    "dependenciesMeta": {
+        "prettier-plugin-packagejson@2.5.6": {
+            "unplugged": true
+        }
+    },
+    "packageManager": "yarn@4.5.3+sha512.3003a14012e2987072d244c720506549c1aab73ee728208f1b2580a9fd67b92d61ba6b08fe93f6dce68fd771e3af1e59a0afa28dd242dd0940d73b95fedd4e90",
+    "engines": {
+        "node": ">=20.0.0"
+    }
+}
