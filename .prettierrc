@@ -11,6 +11,5 @@
     "bracketSameLine": false,
     "arrowParens": "avoid",
     "endOfLine": "lf",
-    "editorconfig": true,
     "plugins": ["prettier-plugin-packagejson"]
 }
