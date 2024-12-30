@@ -1,0 +1,33 @@
+$schema: 'https://moonrepo.dev/schemas/tasks.json'
+
+# Define a common list of file groups.
+fileGroups:
+  configs:
+    - '*.config.{js,cjs,mjs}'
+    - '*.json'
+  sources:
+    - 'src/**/*'
+    - 'types/**/*'
+  tests:
+    - 'tests/**/*'
+    - '**/__tests__/**/*'
+  assets:
+    - 'assets/**/*'
+    - 'images/**/*'
+    - 'static/**/*'
+    - '**/*.{scss,css}'
+
+# Declare some default tasks.
+tasks:
+  format-check:
+    description: "Runs prettier to validate the format of the source files."
+    command: "bunx --bun prettier"
+    args: [ ".", "--check" ]
+    options:
+      outputStyle: "buffer-only-failure"
+  
+  format:
+    description: "Runs prettier to reformat all the source files."
+    extends: "format-check"
+    args: [ "--write" ]
+  
