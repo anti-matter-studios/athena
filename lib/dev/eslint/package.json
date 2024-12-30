@@ -1,0 +1,55 @@
+{
+    "name": "@anti-matter-studios/eslint",
+    "version": "0.1.0",
+    "description": "Tool used to share eslint configuration across the repository.",
+    "homepage": "https://docs.anti-matter.studio/packages/@anti-matter-studios/eslint",
+    "bugs": {
+        "url": "https://youtrack.anti-matter.studio/newIssue?project=CYDONIA&c=Kind+Bug&textFields=id%3D491-21%26value%3D%40anti-matter-studios%2Feslint%26type%3DTextFieldAndValue"
+    },
+    "license": "UNLICENSED",
+    "author": {
+        "name": "Anti-Matter Studios",
+        "email": "contact@anti-matter.studio",
+        "url": "https://anti-matter.studio/"
+    },
+    "contributors": [
+        {
+            "name": "Akane SHIMOKA",
+            "email": "akane@shimoka.dev",
+            "url": "https://akane.shimoka.dev/"
+        }
+    ],
+    "type": "module",
+    "exports": {
+        "./config": {
+            "types": "./dist/config.d.ts",
+            "default": "./dist/config.js"
+        }
+    },
+    "files": [
+        "dist",
+        "package.json",
+        "CHANGELOG.md",
+        "README.md",
+        "LICENSE.txt"
+    ],
+    "dependencies": {
+        "@eslint/js": "^9.17.0",
+        "@typescript-eslint/utils": "^8.18.0",
+        "eslint-plugin-react": "^7.37.2",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "typescript": "^5.7.2",
+        "typescript-eslint": "^8.18.0"
+    },
+    "devDependencies": {
+        "@types/eslint": "^9.6.1",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.10.2",
+        "@typescript-eslint/type-utils": "^8.18.0",
+        "eslint": "^9.17.0"
+    },
+    "packageManager": "yarn@4.5.3+sha512.3003a14012e2987072d244c720506549c1aab73ee728208f1b2580a9fd67b92d61ba6b08fe93f6dce68fd771e3af1e59a0afa28dd242dd0940d73b95fedd4e90",
+    "engines": {
+        "node": ">=20.0.0"
+    }
+}

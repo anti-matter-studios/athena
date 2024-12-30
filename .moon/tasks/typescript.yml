@@ -1,0 +1,20 @@
+$schema: 'https://moonrepo.dev/schemas/tasks.json'
+
+# Use the package.json file as an implicit input for all task types.
+implicitInputs:
+  - 'package.json'
+
+# Declare some default tasks.
+tasks:
+  lint:
+    description: "Runs ESLint to validate the format of the source files."
+    command: "bunx --bun eslint"
+    args: [ "--no-error-on-unmatched-pattern", "src", "tests" ]
+    deps: [ "eslint:build" ]
+    options:
+      outputStyle: "buffer-only-failure"
+  
+  lint-fix:
+    description: "Runs ESLint with the `--fix` flag enabled."
+    extends: "lint"
+    args: [ "--fix" ]

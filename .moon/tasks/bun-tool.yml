@@ -1,0 +1,19 @@
+$schema: 'https://moonrepo.dev/schemas/tasks.json'
+
+# Use the package.json file as an implicit input for all task types.
+implicitInputs:
+  - 'package.json'
+
+# Declare some default tasks.
+tasks:
+  build:
+    description: "Builds the package with bun."
+    command: "bun build"
+    args:
+      - "--outdir=./dist"
+      - "--target=node"
+      - "--packages=external"
+      - "--sourcemap=linked"
+      - "--footer=// Built with love 🏳️‍⚧️🐝"
+    options:
+      outputStyle: "none"
