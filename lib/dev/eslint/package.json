@@ -1,12 +1,9 @@
 {
     "name": "@anti-matter-studios/eslint",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Tool used to share eslint configuration across the repository.",
     "homepage": "https://docs.anti-matter.studio/packages/@anti-matter-studios/eslint",
-    "bugs": {
-        "url": "https://youtrack.anti-matter.studio/newIssue?project=CYDONIA&c=Kind+Bug&textFields=id%3D491-21%26value%3D%40anti-matter-studios%2Feslint%26type%3DTextFieldAndValue"
-    },
-    "license": "UNLICENSED",
+    "license": "MIT",
     "author": {
         "name": "Anti-Matter Studios",
         "email": "contact@anti-matter.studio",
