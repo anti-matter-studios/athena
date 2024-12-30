@@ -1,5 +1,17 @@
 $schema: 'https://moonrepo.dev/schemas/tasks.json'
 
+# Define a common list of file groups.
+fileGroups:
+  sources:
+    - 'src/**/*.ts'
+    - 'src/**/*.tsx'
+    - '!src/**/*.spec.ts'
+    - '!src/**/*.spec.tsx'
+    - 'types/**/*.d.ts'
+  tests:
+    - 'src/**/*.spec.ts'
+    - 'src/**/*.spec.tsx'
+
 # Use the package.json file as an implicit input for all task types.
 implicitInputs:
   - 'package.json'

@@ -8,9 +8,20 @@ implicitInputs:
 tasks:
   build:
     description: "Builds the package with bun."
-    command: "bunx build"
+    command: "bun build"
     args:
       - "--outdir=./dist"
       - "--target=bun"
       - "--packages=external"
       - "--sourcemap=linked"
+      - "--footer=// Built with love 🏳️‍⚧️🐝"
+    options:
+      outputStyle: "none"
+    inputs: [ "@group(sources)" ]
+
+  test:
+    description: "Tests the package with bun."
+    command: "bun test"
+    args:
+      - "src"
+    inputs: [ "@group(sources)", "@group(tests)" ]

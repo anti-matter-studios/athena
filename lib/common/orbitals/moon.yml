@@ -1,0 +1,17 @@
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+id: "orbitals"
+type: "library"
+platform: "bun"
+language: "typescript"
+
+project:
+  name: Orbitals
+  description: "Library used to resolve orbits in the solar system."
+  maintainers: [ "Akane SHIMOKA <akane@shimoka.dev>" ]
+  owner: "Anti-Matter Studios <contact@anti-matter.studio>"
+
+# List of all the tasks specific to this project.
+tasks:
+  build:
+    args: "--entrypoints ./src/index.ts"
