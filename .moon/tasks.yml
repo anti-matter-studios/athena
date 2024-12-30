@@ -8,9 +8,6 @@ fileGroups:
   sources:
     - 'src/**/*'
     - 'types/**/*'
-  tests:
-    - 'tests/**/*'
-    - '**/__tests__/**/*'
   assets:
     - 'assets/**/*'
     - 'images/**/*'

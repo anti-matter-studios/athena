@@ -17,3 +17,4 @@ tasks:
       - "--footer=// Built with love 🏳️‍⚧️🐝"
     options:
       outputStyle: "none"
+    inputs: [ "@group(sources)" ]
