@@ -1,0 +1,18 @@
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+id: "eslint"
+type: tool
+platform: bun
+
+project:
+  name: Eslint
+  description: "Tool used to share eslint configuration across the repository."
+  maintainers: [ "Akane SHIMOKA <akane@shimoka.dev>" ]
+  owner: "Anti-Matter Studios <contact@anti-matter.studio>"
+
+stack: systems
+
+# List of all the tasks specific to this project.
+tasks:
+  build:
+    args: "--entrypoints ./src/config.ts"
