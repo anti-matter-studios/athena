@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "types": ["node", "bun"]
+    },
+    "references": [
+        {"path": "./tsconfig.lib.json"}
+    ],
+    "include": ["src/**/*.spec.ts"],
+    "exclude": []
+}

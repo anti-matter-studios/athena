@@ -21,7 +21,8 @@
         "strict": true,
         "target": "ESNext",
         "paths": {
-            "@anti-matter-studios/cydonia/*": ["app/cydonia/src/*"]
+            "@anti-matter-studios/cydonia/*": ["app/cydonia/src/*"],
+            "@anti-matter-studios/orbitals": ["lib/common/orbitals/src/index.ts"]
         }
     },
     "include": [],
